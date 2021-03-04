@@ -1,0 +1,14 @@
+{
+  "name": "points-node-api-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge to demonstrate API development skills with NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Misael Barcelona",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
