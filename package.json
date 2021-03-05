@@ -4,11 +4,17 @@
   "description": "Coding challenge to demonstrate API development skills with NodeJS",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Misael Barcelona",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
