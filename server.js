@@ -9,11 +9,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-global.myPoints = [
-    { payer: "DANNON", points: -100 },
-    { payer: "UNILEVER", points: -200 },
-    { payer: "MILLER COORS", points: -4700 },
-];
+global.myPoints = [];
 
 // Register routes
 var pointRouter = require('./api/routes/point');

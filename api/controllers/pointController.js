@@ -16,19 +16,33 @@ exports.validate = (method) => {
 }
 
 exports.getPoints = function (req, res) {
-    res.send(myPoints);
+    let result = {};
+    myPoints.forEach(point => {
+        if(!result[point.payer]) {
+            // Initialize payer points
+            result[point.payer] = 0; 
+        }
+        // Add points to payer
+        result[point.payer] += point.points;
+    });
+    res.json(result);
 };
 
 exports.addPoints = function (req, res) {
-    const errors = validationResult(req); // Finds the validation errors in this request and wraps them in an object with handy functions
+    // Finds the validation errors in this request and wraps them in an object with handy functions
+    const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
         res.status(422).json({ errors: errors.array() });
         return;
     }
 
-    res.send(req.body);
-    res.send(myPoints);
+    // Convert request back to integer
+    req.body.points = parseInt(req.body.points);
+    // Save points into datastore
+    myPoints.push(req.body);
+    // Return response
+    res.json(myPoints);
 };
 
 exports.spendPoints = function (req, res) {
