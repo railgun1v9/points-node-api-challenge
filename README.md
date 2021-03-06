@@ -72,7 +72,7 @@ Key | Example Value | Validation Rules
 points | 5000 | integer, required
 ```
 
-*NOTE* If your total point balance is insufficient for spending the amount specified, you will get an error saying so and you will not be able to spend the point amount.
+
 
 Example response:
 ```
@@ -81,6 +81,13 @@ Example response:
     "DANNON": -700,
     "UNILEVER": 0,
     "MILLER COORS": -300
+}
+```
+
+*NOTE* If your total point balance is insufficient for spending the amount specified, you will get an error saying so and you will not be able to spend the point amount.
+```
+{
+    "message": "Balance is insufficient."
 }
 ```
   
