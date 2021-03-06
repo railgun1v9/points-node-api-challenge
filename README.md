@@ -66,12 +66,12 @@ Example response:
         "payer": "UNILEVER",
         "points": 200,
         "timestamp": "2020-10-31T11:00:00Z"
-    }.
+    },
     {
         "payer": "TEST",
         "points": 2000,
         "timestamp": "2020-10-02T14:01:00Z"
-    }.
+    }
 ]
 ```
 
