@@ -84,7 +84,7 @@ Example response:
 }
 ```
 
-*NOTE* If your total point balance is insufficient for spending the amount specified, you will get an error saying so and you will not be able to spend the point amount.
+*NOTE*: If your total point balance is insufficient for spending the amount specified, you will get an error saying so and you will not be able to spend the point amount.
 ```
 {
     "message": "Balance is insufficient."
