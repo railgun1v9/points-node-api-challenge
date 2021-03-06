@@ -34,11 +34,11 @@ Example response:
 ```
 BODY content-type = `application/x-www-form-urlencoded`
 
-Key - Example Value - Validation Rules
+Key | Example Value | Validation Rules
 
-payer - TEST - string, required
-points - 2000 - integer, required
-timestamp - 2020-10-02T14:01:00Z - timestamp (Iso-8601 formatted works), required 
+payer | TEST | string, required
+points | 2000 | integer, required
+timestamp | 2020-10-02T14:01:00Z | timestamp (Iso-8601 formatted works), required 
 ```
 
 Example response:
@@ -67,9 +67,9 @@ Example response:
 ```
 BODY content-type = application/x-www-form-urlencoded
 
-Key - Example Value - Validation Rules
+Key | Example Value | Validation Rules
 
-points - 5000 - integer, required
+points | 5000 | integer, required
 ```
 
 Example response:
