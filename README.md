@@ -13,7 +13,7 @@ Coding challenge to demonstrate API development skills with NodeJS
 2. Navigate to the project directory
 3. Run the command `npm install`
 4. Run the command `npm run start`
-5. The Points API server will start on port 3000 by default, take note of which port it responds with.
+5. The Points API server will start on port 3000 by default, take note of which port it responds with and make your requests to that port as needed.
 
 # Endpoints (using port 3000 for this example)
 ## Get Point Balance
