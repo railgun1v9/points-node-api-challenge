@@ -33,9 +33,10 @@ Example response:
 
 ```
 BODY content-type = `application/x-www-form-urlencoded`
-`payer` - `TEST` - string, required
-`points` - `2000` - integer, required
-`timestamp` - `2020-10-02T14:01:00Z` - timestamp (Iso-8601 formatted works), required 
+Key - Example Value - Validation Rules
+payer - TEST - string, required
+points - 2000 - integer, required
+timestamp - 2020-10-02T14:01:00Z - timestamp (Iso-8601 formatted works), required 
 ```
 
 Example response:
