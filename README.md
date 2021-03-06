@@ -33,7 +33,9 @@ Example response:
 
 ```
 BODY content-type = `application/x-www-form-urlencoded`
+
 Key - Example Value - Validation Rules
+
 payer - TEST - string, required
 points - 2000 - integer, required
 timestamp - 2020-10-02T14:01:00Z - timestamp (Iso-8601 formatted works), required 
@@ -62,15 +64,22 @@ Example response:
 
 ## Spend Points
 `POST` `http://localhost:3000/point/spend`
-BODY content-type = `application/x-www-form-urlencoded`
-`points` - `5000` - integer, required
+```
+BODY content-type = application/x-www-form-urlencoded
+
+Key - Example Value - Validation Rules
+
+points - 5000 - integer, required
+```
 
 Example response:
-`{
+```
+{
     "ALDId": -4000,
     "DANNON": -700,
     "UNILEVER": 0,
     "MILLER COORS": -300
-}`
+}
+```
   
   
