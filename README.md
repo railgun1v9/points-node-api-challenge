@@ -32,7 +32,7 @@ Example response:
 `POST` `http://localhost:3000/point`
 
 ```
-BODY content-type = `application/x-www-form-urlencoded`
+BODY content-type = application/x-www-form-urlencoded
 
 Key | Example Value | Validation Rules
 
