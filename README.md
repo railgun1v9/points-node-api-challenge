@@ -20,11 +20,11 @@ Coding challenge to demonstrate API development skills with NodeJS
 `GET` `http://localhost:3000/point`
 
 Example response:
-```{
+``{
     "DANNON": 1100,
     "UNILEVER": 200,
     "MILLER COORS": 10000
-}```
+}``
 
 ## Add Points
 `POST` `http://localhost:3000/point`
