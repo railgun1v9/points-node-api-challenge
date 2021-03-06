@@ -72,6 +72,8 @@ Key | Example Value | Validation Rules
 points | 5000 | integer, required
 ```
 
+*NOTE* If your total point balance is insufficient for spending the amount specified, you will get an error saying so and you will not be able to spend the point amount.
+
 Example response:
 ```
 {
