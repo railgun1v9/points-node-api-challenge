@@ -16,7 +16,7 @@ Coding challenge to demonstrate API development skills with NodeJS
 5. The Points API server will start on port 3000 by default, take note of which port it responds with.
 
 # Endpoints (using port 3000 for this example)
-- Get Point Balance
+## Get Point Balance
 `GET` `http://localhost:3000/point`
 
 Example response:
@@ -26,7 +26,7 @@ Example response:
     "MILLER COORS": 10000
 }`
 
-- Add Points
+## Add Points
 `POST` `http://localhost:3000/point`
 BODY content-type = `application/x-www-form-urlencoded`
 `payer` - `TEST` - string, required
@@ -52,7 +52,7 @@ Example response:
     }.
 ]`
 
-- Spend Points
+## Spend Points
 `POST` `http://localhost:3000/point/spend`
 BODY content-type = `application/x-www-form-urlencoded`
 `points` - `5000` - integer, required
