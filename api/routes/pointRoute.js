@@ -11,11 +11,15 @@ router.get("/point", pointController.getPoints);
 // Add points
 router.post(
     "/point",
-    pointController.validate('addPoints'),
+    pointController.validate("addPoints"),
     pointController.addPoints
 );
 
 // Spend points
-router.post("/point/spend", pointController.spendPoints);
+router.post(
+    "/point/spend",
+    pointController.validate("spendPoints"),
+    pointController.spendPoints
+);
 
 module.exports = router;
