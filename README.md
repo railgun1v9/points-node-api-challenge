@@ -90,7 +90,7 @@ points | 5000 | integer, required
 Example response:
 ```
 {
-    "ALDId": -4000,
+    "ALDI": -4000,
     "DANNON": -700,
     "UNILEVER": 0,
     "MILLER COORS": -300
