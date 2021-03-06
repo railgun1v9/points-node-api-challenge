@@ -30,13 +30,17 @@ Example response:
 
 ## Add Points
 `POST` `http://localhost:3000/point`
+
+```
 BODY content-type = `application/x-www-form-urlencoded`
 `payer` - `TEST` - string, required
 `points` - `2000` - integer, required
 `timestamp` - `2020-10-02T14:01:00Z` - timestamp (Iso-8601 formatted works), required 
+```
 
 Example response:
-`[
+```
+[
     {
         "payer": "DANNON",
         "points": 1000,
@@ -52,7 +56,8 @@ Example response:
         "points": 2000,
         "timestamp": "2020-10-02T14:01:00Z"
     }.
-]`
+]
+```
 
 ## Spend Points
 `POST` `http://localhost:3000/point/spend`
