@@ -11,7 +11,7 @@ exports.spendPoints = function (pointsToSpend) {
 
     myPoints.forEach((element) => {
         if (pointsToSpend > 0) {
-            // Check if spending these points will make customer go negative
+            // Check if spending these points will make payer go negative
             let payerPointsRemaining =
                 getPointsByPayer(element.payer) - element.points;
             if (payerPointsRemaining >= 0) {
@@ -46,7 +46,7 @@ exports.spendPoints = function (pointsToSpend) {
             // Initialize payer points
             result[element.payer] = 0;
         }
-        // Add points to payer
+        // Subtract points from payer
         result[element.payer] -= element.points;
     });
     return result;
